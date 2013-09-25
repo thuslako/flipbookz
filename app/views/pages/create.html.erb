@@ -1,0 +1,19 @@
+<h2><small>Contact<small> <strong>Moi</strong></h2>
+<div class="line"></div>
+<br/>
+<div class="span7">
+<%= form_for @message, :url => contact_path  do |form|  %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label 'email address' %><br />
+  <%= form.text_field :email, :size => 60 %><br />
+  <%= form.label :subject %><br />
+  <%= form.text_field :subject, :size => 60 %><br />
+  <%= form.label :body %>
+  <%= form.text_area :body, :class => "textarea" , :placeholder => "Enter message..." %>
+	<br/>
+  <%= form.submit "Send"%>
+
+<% end %>
+
+</div>

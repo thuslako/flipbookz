@@ -1,0 +1,26 @@
+<div id="news" class="span3 " >
+	<h2>Welcome</h2>
+	<div class="line2"></div>
+	<br/>
+	<p> Here's a collection of my photos</p>
+</div>
+
+<div id="feed" class="span6 offset2 ">
+<div id="title-head">
+	<h2>My Photos</h2>
+	<div class="line"></div>
+</div>
+<div id="qview"></div>
+ <div id="photos">
+	<% @post.each do |n| %>
+	<div class="title">
+	<h4><strong><%= truncate(n.title,:length =>20) %></strong><small> <%=time_ago_in_words(n.created_at)%></small></h4>
+	</div>
+ 	<div class="posts">
+	<%= link_to (image_tag n.img.url(:medium),:class => "img-polaroid"),n,:controller => 'posts' %> 
+	<%= truncate(n.desc , :length => 30, :omission => '...continued') %>
+	</div>
+	<br/>
+	<% end %>
+ </div>
+</div>

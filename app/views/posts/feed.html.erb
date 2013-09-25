@@ -1,0 +1,19 @@
+  
+
+<table class="table">
+	<tr>
+		<td>Id</td>
+		<td>Title</td>
+		<td>Image</td>
+		<td>Delete</td>
+		<td>Edit</td>
+	<tr>
+<% @post.each do |n| %>
+		<td><%= n.id %></td>
+    	<td><%= n.title %></td>
+    	<td><%= image_tag n.img.url(:thumb) %></td>
+    	<td><%= link_to 'Delete', n, :class => "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?'} %></td>
+		<td><%= link_to 'Edit', edit_post_path(:id =>n),:class => 'btn btn-warning'%></td>
+  	</tr>
+<% end %>
+ </table>

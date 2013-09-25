@@ -1,0 +1,14 @@
+  <div class="span6">
+<%= form_for @post, :html => {:multipart => true} do |form| %>
+  <%= image_tag @post.img.url(:medium) %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label "Description" %>
+  <%= form.text_area :desc, :class => "textarea" , :placeholder => "Enter description..." %>
+	<br/>
+	<br/>
+  <%= form.submit "Update"%>
+
+<% end %>
+
+</div>
