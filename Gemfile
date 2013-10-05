@@ -6,6 +6,10 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< HEAD
+=======
+gem 'sqlite3'
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
 gem('json')
 
 group :assets do
@@ -19,7 +23,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+<<<<<<< HEAD
 gem 'pg'
+=======
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
 gem "paperclip", "~> 3.0"
 gem "therubyracer"
 gem "less-rails"

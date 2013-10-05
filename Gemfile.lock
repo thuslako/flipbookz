@@ -71,7 +71,10 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.4.0)
       mime-types
+<<<<<<< HEAD
     pg (0.17.0)
+=======
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -135,7 +138,10 @@ DEPENDENCIES
   json
   less-rails
   paperclip (~> 3.0)
+<<<<<<< HEAD
   pg
+=======
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
   rails (= 3.2.8)
   sass-rails (~> 3.2.3)
   sqlite3

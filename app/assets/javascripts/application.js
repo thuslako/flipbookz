@@ -16,6 +16,12 @@
 //= require twitter/bootstrap
 
 
+<<<<<<< HEAD
 $(".alert alert-succuss").alert()
 $(".alert alert-error").alert()
 $("<%= escape_javascript(render @post ) %>").appendTo("#qview");
+=======
+$(".alert alert-succuss").alert();
+$(".alert alert-error").alert();
+
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
