@@ -1,0 +1,17 @@
+
+  <div class="span7">
+<%= form_for @post, :html => { :multipart => true } do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label "Description" %>
+  <%= form.text_area :desc, :class => "textarea" , :placeholder => "Enter description..." %>
+  <span class="btn btn-success fileinput-button">
+  <%= form.file_field :img%>
+	</span>
+	<br/>
+	<br/>
+  <%= form.submit "Post"%>
+
+<% end %>
+
+</div>

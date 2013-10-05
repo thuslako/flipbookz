@@ -1,0 +1,23 @@
+<h2><small>Contact</small> <strong>Moi</strong></h2>
+<div class="line"></div>
+<div id='msg'>
+<br/>
+<h4><strong>"</strong><small>Send me your email,</small> <strong>I just might answer." </strong></h4>
+</div>
+<br/>
+  <div class="span7">
+<%= form_for @message, :url => contact_path  do |form|  %>
+  <%= form.label :name %>
+  <%= form.text_field :name, :placeholder => "Mister Love" %>
+  <%= form.label 'email address' %><br />
+  <%= form.text_field :email, :size => 60, :placeholder => "you@me.com" %><br />
+  <%= form.label :subject %>
+  <%= form.text_field :subject, :size => 60, :placeholder => "hello good sir!" %><br />
+  <%= form.label 'Your message' %>
+  <%= form.text_area :body, :class => "textarea" , :placeholder => "Enter message..." %>
+	<br/>
+  <%= form.submit "Send"%>
+
+<% end %>
+
+</div>
