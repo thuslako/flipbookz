@@ -20,4 +20,15 @@ $("a[rel=popover]").popover()
 $(".tooltip").tooltip()
 $("a[rel=tooltip]").tooltip()
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+$(".alert alert-succuss").alert()
+$(".alert alert-error").alert()
+$("<%= escape_javascript(render @post ) %>").appendTo("#qview");
+=======
+$(".alert alert-succuss").alert();
+$(".alert alert-error").alert();
+>>>>>>> 9c4834e89589f59f76f2dce44ed9143ed524675c
 
+>>>>>>> 35d98c2d8d79f31a83b726f6ff254c44e76170bb
