@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
 //= require twitter/bootstrap
+//= require_tree .
 
 
-$(".alert alert-succuss").alert();
-$(".alert alert-error").alert();
+$("a[rel=popover]").popover()
+$(".tooltip").tooltip()
+$("a[rel=tooltip]").tooltip()
+
 
