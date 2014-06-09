@@ -64,7 +64,7 @@ module Flipbook
       :port                 => 587,
       :domain               => "gmail.com",
       :user_name            => "lukundu.lako@gmail.com",
-      :password             => "create24",
+      :password             => "******",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
